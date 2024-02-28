@@ -3,12 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Steve&Kate's</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header>
-      <div>
-        <img src="./public/logo.png" alt="Steve&Kate's">
-      </div>
+      <img src="./public/logo.png" class="header-logo" alt="Steve&Kate's">
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -17,111 +16,123 @@
           <li><a href="./pages/contactUs.html">Contact Us</a></li>
         </ul>
       </nav>
-      <div>
-        <button>Log In</button>
-      </div>
+      <button class="login-button">Log In</button>
     </header>
     <hr>
     <main>
-      <div style="width: 100%; max-height: fit-content;">
-        <img src="./public/welcome-img.png" style="width: 100%;" alt="WelcomeImg">
+      <div class="welcome-img">
+        <img src="./public/welcome-img.png"  alt="WelcomeImg">
       </div>
       <hr>
-      <article>
-        <h1>Here, we put kids in charge</h1> 
-        <h4>Preposterous? Possibly. Effective? You betcha.</h4>
-        <div>
+      <section class="section-1 wrapper-row">
+        <div class="section-1_content">
+          <h1>Here, we put kids in charge</h1> 
+          <h4>Preposterous? Possibly. Effective? You betcha.</h4>
           <div>
-            <p>Steve & Kate’s Camp was founded on the belief that when you trust kids, they learn to trust themselves, and develop a creative confidence that will help them unleash their true potential. So for us, camp is not a place where kids go to sit in the sun, or play games with a winner and a loser. It’s a place where they can be themselves, and realize their own creative potential. And that’s what makes it so much fun.</p>
-            <p>When you trust kids, they trust themselves. For 44 years, we’ve put kids in charge of their own learning experience. They try, fail, and learn on their own. They learn to trust their own judgment, and tackle the challenges of an ever changing world with creativity and confidence.</p>
-            <p>Campers choose minute to minute from a variety of activities including, sewing, stop-motion animation, music, sports & recreation, makers crafts, bread making, and more. They’ll decide what they want to do, and for how long. Our job is to get out of their way, cheerlead creative risks, and provide just enough guidance to make sure nobody does anything totally* asinine.</p>
-            <p><i>*Totally asinine: By our definition, mistakes aren’t asinine. They’re how you learn.</i></p>
-
+            <div class="section-1_p">
+              <p>Steve & Kate’s Camp was founded on the belief that when you trust kids, they learn to trust themselves, and develop a creative confidence that will help them unleash their true potential. So for us, camp is not a place where kids go to sit in the sun, or play games with a winner and a loser. It’s a place where they can be themselves, and realize their own creative potential. And that’s what makes it so much fun.</p>
+              <p>When you trust kids, they trust themselves. For 44 years, we’ve put kids in charge of their own learning experience. They try, fail, and learn on their own. They learn to trust their own judgment, and tackle the challenges of an ever changing world with creativity and confidence.</p>
+              <p>Campers choose minute to minute from a variety of activities including, sewing, stop-motion animation, music, sports & recreation, makers crafts, bread making, and more. They’ll decide what they want to do, and for how long. Our job is to get out of their way, cheerlead creative risks, and provide just enough guidance to make sure nobody does anything totally* asinine.</p>
+              <p><i>*Totally asinine: By our definition, mistakes aren’t asinine. They’re how you learn.</i></p>
+  
+            </div>
           </div>
         </div>
-        <aside>
-          <div style="width: 100px;">
+        <aside class="section-1_aside">
+          <div class="aside-img">
             <img src="./public/aside-image.png" style="width: 100%;" alt="aside-image">
           </div>
           <h5>HOLIDAY CAMPS</h5>
           <p> Camp shouldn’t have an off-season. Find your local camp for fall, winter, spring & school breaks to learn all about our activities, specials, and more. Camp is for kids ages 4–12.</p>
           <button>FIND A HOLIDAY CAMP</button>
         </aside>
-      </article>
+      </section>
       <hr>
-      <article>
-        <h1>70+ Locations—Probably Near You</h1>
-        <h4>Select a location to learn more about our camps</h4>
-      <!-- puse la imagen para ahorrar tiempo pero en un caso real no lo haria -->
-        <div style="width: 50vw;">
-          <img style="width: 100%;" src="./public/table.png" alt="">
+      <article class="section-2">
+        <div class="section-2_div-1">
+          <h1>70+ Locations—Probably Near You</h1>
+          <h4>Select a location to learn more about our camps</h4>
         </div>
-      </article>
-      <hr>
-      <article>
-        <h1>Testimonials</h1>
-        <h4>Learn where your website traffic is coming from, what your visitors are looking for, and how they’re interacting with your content or products through our in-depth Analytics tools.</h4>
-        <div>
-          <div>
-            <div style="width: 200px;">
-              <img style="width: 100%;" src="./public/testimonial-1.png" alt="">
-            </div>
-            <h5>Mayra Dutch</h5>
-            <h5>AIR FLOW</h5>
-          </div>
-          <p><i>“The best solution in the market to solve any problem yoy may have.</i></p>
-        </div>
-        <div>
-          <div>
-            <div style="width: 200px;">
-              <img style="width: 100%;" src="./public/testimonial-2.png" alt="">
-            </div>
-            <h5>Anne Donovan</h5>
-            <h5>AIR FLOW</h5>
-          </div>
-          <p><i>“The best solution in the market to solve any problem yoy may have.</i></p>
-        </div>
-        <div>
-          <div>
-            <div style="width: 200px;">
-              <img style="width: 100%;" src="./public/testimonial-3.png" alt="">
-            </div>
-            <h5>Aaron Smith</h5>
-            <h5>AIR FLOW</h5>
-          </div>
-          <p><i>“The best solution in the market to solve any problem yoy may have.</i></p>
+        <div class="section-2_div-2" >
+          <img class="section-2_img" src="./public/table.png" alt="">
         </div>
       </article>
       <hr>
-      <div>
-        <div style="width: 50vw;">
-          <img style="width: 100%;" src="./public/contact-us.png" alt="">
+      <article class="article-1">
+        <h1 class="article-1-text">Testimonials</h1>
+        <h4 class="article-1-text">Learn where your website traffic is coming from, what your visitors are looking for, and how they’re interacting with your content or products through our in-depth Analytics tools.</h4>
+        <div class="article-1-content">
+          <div class="article-1-card">
+            <div class="article-l-card-div">
+              <div class="article-1-card-img">
+                <img  src="./public/testimonial-1.png" alt="">
+              </div>
+              <div>
+                <h5>Mayra Dutch</h5>
+                <h5>AIR FLOW</h5>
+              </div>
+            </div>
+            <p><i>“The best solution in the market to solve any problem yoy may have.</i></p>
+          </div>
+          <div class="article-1-card">
+            <div class="article-l-card-div">
+              <div class="article-1-card-img">
+                <img  src="./public/testimonial-2.png" alt="">
+              </div>
+              <div>
+                <h5>Anne Donovan</h5>
+                <h5>AIR FLOW</h5>
+              </div>
+            </div>
+            <p><i>“The best solution in the market to solve any problem yoy may have.</i></p>
+          </div>
+          <div class="article-1-card">
+            <div class="article-l-card-div">
+              <div class="article-1-card-img">
+                <img  src="./public/testimonial-3.png" alt="">
+              </div>
+              <div>
+                <h5>Aaron Smith</h5>
+                <h5>AIR FLOW</h5>
+              </div>
+            </div>
+            <p><i>“The best solution in the market to solve any problem yoy may have.</i></p>
+          </div>
         </div>
-        <aside>
+      </article>
+      <hr>
+      <div class="final_div wrapper-row">
+        <div class="final_div-img">
+          <img src="./public/contact-us.png" alt="">
+        </div>
+        <aside class="aside-form">
           <h4>Contact Us</h4>
-          <form>
+          <form class="form">
             <label for="email">EMAIL ADDRESS</label>
             <input type="email" id="email" name="email" placeholder="EMAIL ADDRESS">
-      
+          
             <label for="name">YOUR NAME</label>
             <input type="text" id="name" name="name" placeholder="YOUR NAME">
-      
+          
             <label for="location">YOUR LOCATION</label>
-            <input type="text" id="location" name="location" placeholder="YOUR LOCATION">
-            <input type="text" id="zip" name="zip" placeholder="ZIP CODE">
-      
+            <div class="location-zip">
+              <input type="text" id="location" name="location" placeholder="YOUR LOCATION">
+          
+              <input type="text" id="zip" name="zip" placeholder="ZIP CODE">
+            </div>
+          
             <label for="message">YOUR MESSAGE</label>
-            <textarea id="message" name="message" placeholder="YOUR MESSAGE"></textarea>
-      
+            <textarea class="textarea" id="message" name="message" placeholder="YOUR MESSAGE"></textarea>
+          
             <button type="submit">SEND MESSAGE</button>
           </form>
+          
         </aside>
       </div>
     </main>
     <hr>
     <footer>
-      <div>
-        <div>
+        <div class="footer-logo">
           <img src="https://steveandkatescamp.com/wp-content/uploads/2022/01/steveandkates-logo.png" alt="">
           <div>
             <address>
@@ -148,9 +159,9 @@
           </div>
         </div>
 
-        <ul>
+        <ul class="footer-ul">
           <li>
-            <a href="#">ABOUT S&amp;K</a>
+            <a class="ul-title" href="#">ABOUT S&amp;K</a>
             <ul>
               <li><a href="https://steveandkatescamp.com/philosophy/">Philosophy</a></li>
               <li><a href="https://steveandkatescamp.com/jobs/">Jobs</a></li>
@@ -160,7 +171,7 @@
             </ul>
           </li>
           <li>
-            <a href="#">HELPFUL LINKS</a>
+            <a class="ul-title" href="#">HELPFUL LINKS</a>
             <ul>
               <li><a href="https://steveandkatescamp.com/fees/financial-aid/">Financial Aid</a></li>
               <li><a href="https://steveandkatescamp.com/bright-horizons/">Using Bright Horizons Back-Up Care</a></li>
@@ -169,7 +180,7 @@
             </ul>
           </li>
           <li>
-            <a href="#">OUR CAMPS</a>
+            <a class="ul-title" href="#">OUR CAMPS</a>
             <ul>
               <li><a href="https://steveandkatescamp.com/locations/">Summer Camps</a></li>
               <li><a href="https://steveandkatescamp.com/winter-spring-camps/">Spring Break Camps</a></li>
@@ -177,16 +188,18 @@
             </ul>
           </li>
           <li>
-            <a href="#">LEGAL STUFF</a>
+            <a class="ul-title" href="#">LEGAL STUFF</a>
             <ul>
               <li><a href="https://steveandkatescamp.com/liability-waiver/">Liability Waiver</a></li>
               <li><a href="https://steveandkatescamp.com/dmca-policy/">DMCA</a></li>
               <li><a href="https://steveandkatescamp.com/online-guidelines-and-safety/">Steve &amp; Kate’s Virtual Camp Guidelines &amp; Safety</a></li>
             </ul>
           </li>
+          <li>
+            <p>Copyright © 2024. All Rights Reserved.<a href="https://steveandkatescamp.com/privacy-policy/" target="_blank"></a></p>
+          </li>
+          
         </ul>
-      </div>
-      <p>Copyright © 2024. All Rights Reserved.<a href="https://steveandkatescamp.com/privacy-policy/" target="_blank">Privacy Policy. &amp; COPPA NOTICE.</a></p>
     </footer>
   </body>
 </html>
